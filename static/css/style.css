@@ -117,7 +117,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: url(static/img/nav-bar-bg.jpg);
+    background: url(/static/img/nav-bar-bg.jpg);
 
 }
 
@@ -424,7 +424,7 @@ nav .logo {
   width: 390px;
   height: 390px;
   background-color: #46330A;
-  background-image: url(static/img/CARD\ 1.png);
+  background-image: url(/static/img/CARD\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -723,7 +723,7 @@ nav .logo {
   margin-left: 280px;
   height: 180px;
   background-color: #46330A;
-  background-image: url(static/img/last-cta-foto.png);
+  background-image: url(/static/img/last-cta-foto.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,7 +811,7 @@ nav .logo {
   margin-right: 240px;
   padding: 50px;
   background-color: rgba(70, 51, 10, 0.85);
-  background: url(static/img/FORM.png); 
+  background: url(/static/img/FORM.png); 
   border-radius: 15px;
   color: #FAF5E9;
   font-family: "Raleway", sans-serif;
@@ -1004,6 +1004,16 @@ hr {
 
 @media screen and (max-width: 700px){ 
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
 nav {
      margin-inline: 20px;
   }
@@ -1011,10 +1021,10 @@ nav {
 .nav-lista {
     position: fixed;
     top: 0;
-    right: -100%; /* começa fora da tela à direita */
+    right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: #2e2206e8;
+    background-color: #2e2206ac;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -1023,7 +1033,7 @@ nav {
     padding-left: 80px;
     padding-bottom: 180px;
     gap: 40px;
-    transition: right 0.5s ease-in-out; /* transição correta */
+    transition: right 0.5s ease-in-out; 
     z-index: 1000;
   }
 
